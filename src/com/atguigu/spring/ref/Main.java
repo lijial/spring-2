@@ -11,6 +11,8 @@ public class Main {
 		
 		UserAction userAction = (UserAction) ctx.getBean("userAction");
 		userAction.execute();
+		System.out.println(userAction.executeParam());
+		System.out.println(111);
 	}
 	
 }

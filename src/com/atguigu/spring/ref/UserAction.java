@@ -12,10 +12,16 @@ public class UserAction {
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}
-	
+	//µº»Îjunit∫Õmockito “¿¿µ
 	public void execute(){
 		System.out.println("execute...");
 		userService.addNew();
+	}
+	
+	public String executeParam(){
+		System.out.println("execute...");
+		userService.addNew();
+		return "success";
 	}
 	
 }
