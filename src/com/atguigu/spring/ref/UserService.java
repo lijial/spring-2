@@ -13,9 +13,21 @@ public class UserService {
 		this.userDao = userDao;
 	}
 	
-	public void addNew(){
+	public void addNew() throws IllegalAccessException {
 		System.out.println("addNew...");
 		userDao.save();
 	}
+	
+	public String serviceExecuteParam() throws IllegalAccessException{
+		System.out.println("execute...");
+		return "success";
+	}
+	public String serviceExecuteParamA() throws IllegalAccessException{
+		return "A";
+	}
+	public String serviceExecuteParamB() throws IllegalAccessException{
+		return "B";
+	}
+	
 	
 }

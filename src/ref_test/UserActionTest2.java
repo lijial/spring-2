@@ -32,11 +32,13 @@ public class UserActionTest2 {
     }
 
     @Test
-    public void test() {
+    public void test() throws IllegalAccessException {
 //        Mockito.doNothing().doThrow(java.lang.Exception.class).when(userService).addNew();//correct,when call userService.addNew() orrur exception,no
     	 																		//run into addNew() method
-        Mockito.doNothing().doThrow(new java.lang.IllegalAccessException()).when(userService).addNew();//correct,no doThrow(java.lang.IllegalAccessException.class)    
-        userAction.execute();
+//    	Mockito.doThrow(new java.lang.IllegalAccessException()).when(userService).addNew();//correct,no doThrow(java.lang.IllegalAccessException.class) £¬no  need doNothing.dothrow
+    																			//really run into the catch clause
+        Mockito.when(userService.serviceExecuteParam()).thenReturn("fuck");//correct,and not run into serviceExecuteParam() method£¬use now for doubt later
+    	userAction.execute();
 //        userAction.executeParam();
     }    
 	
