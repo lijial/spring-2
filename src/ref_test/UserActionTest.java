@@ -1,6 +1,5 @@
 package ref_test;
 
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,6 +14,7 @@ import com.atguigu.spring.ref.UserAction;
 @ContextConfiguration(locations = { "classpath:applicationContext-annotation.xml"})  //file:WebRoot/WEB-INF/*.xml
 
 public class UserActionTest extends AbstractJUnit4SpringContextTests {
+
 	@Autowired
     UserAction userAction;
 	
@@ -24,7 +24,7 @@ public class UserActionTest extends AbstractJUnit4SpringContextTests {
     }
 
     @Test
-    public void test() {
+    public void test() throws IllegalAccessException {
         userAction.execute();
         System.out.println(userAction.executeParam());
         System.out.println(111);

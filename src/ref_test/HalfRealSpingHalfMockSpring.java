@@ -33,6 +33,7 @@ public class HalfRealSpingHalfMockSpring {
 	@Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);//unit test no need this code
+        System.out.println(111);
     }
 
     @Test

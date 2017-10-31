@@ -1,1 +1,17 @@
 /target/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml
+.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml
+.idea/libraries/Maven__junit_junit_4_12.xml
+.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_2.xml
+.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml
+.idea/libraries/Maven__org_springframework_spring_beans_3_2_4_RELEASE.xml
+.idea/libraries/Maven__org_springframework_spring_context_3_2_4_RELEASE.xml
+.idea/libraries/Maven__org_springframework_spring_core_3_2_4_RELEASE.xml
+.idea/libraries/Maven__org_springframework_spring_expression_3_2_4_RELEASE.xml
+.idea/libraries/Maven__org_springframework_spring_test_3_2_4_RELEASE.xml
+.idea/modules.xml
+.idea/vcs.xml
+spring-2.iml

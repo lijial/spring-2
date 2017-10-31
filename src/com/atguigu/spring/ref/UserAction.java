@@ -2,7 +2,6 @@ package com.atguigu.spring.ref;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.SocketUtils;
 
 @Controller
 public class UserAction {

@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalAccessException {
 		
 		//1. ´´½¨ IOC ÈÝÆ÷
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-annotation.xml");

@@ -28,39 +28,39 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>4.0.0.Release</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.0.0.M1</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>4.0.0.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.0.0.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.0.0.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
-			<version>4.0.0.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<!-- 单测相关 -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-test</artifactId>
-		    <version>4.0.0.RELEASE</version>
+		    <version>3.2.4.RELEASE</version>
 		    <scope>test</scope>
 		</dependency>
 		<dependency>
@@ -74,6 +74,12 @@
 			<artifactId>mockito-all</artifactId>
 			<version>1.9.5</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 	</dependencies>
 	<build>
