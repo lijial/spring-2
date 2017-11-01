@@ -16,11 +16,11 @@ import com.atguigu.spring.ref.UserService;
 
 @RunWith(MockitoJUnitRunner.class)
 @ContextConfiguration(locations = { "classpath:/*.xml" })
-public class UserActionTest2 {
+public class MockInjectMockTest {
 	@InjectMocks
-	UserAction userAction;//这个能直接调用进这个类的函数,这样这个函数的类就能被测试
+	UserAction userAction;//InjectMocks的意思是这个能直接调用进userAction这个类的函数,这样这个函数的类就能被测试
 	@Mock
-	UserService userService;//这个调用不进函数，必须mock出这个类调用函数的结果
+	UserService userService;//Mock的意思是这个调用不进userService的函数，必须mock出这个类调用函数的结果
 	@Mock
 	UserDao userDao;
 	
@@ -41,6 +41,7 @@ public class UserActionTest2 {
         Mockito.when(userService.serviceExecuteParam()).thenReturn("fuck");//correct,and not run into serviceExecuteParam() method，use now for doubt later
     	userAction.execute();
 		System.out.println(userAction.executeParam());
+
     }    
 	
 }
